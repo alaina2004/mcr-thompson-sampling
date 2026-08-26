@@ -1,0 +1,32 @@
+@<TRIPOS>MOLECULE
+3tj2 bioassembly 2
+10 11 1 0 0
+SMALL
+NO_CHARGES
+
+
+@<TRIPOS>ATOM
+      1 CLAI       11.4930    9.1430    0.8590 Cl        1 TJ2    0.0000
+      2 CAM        12.8260    6.8970    1.6700 C.ar      1 TJ2    0.0000
+      3 CAP        13.1190    5.8610    2.5710 C.ar      1 TJ2    0.0000
+      4 CAQ        11.1720    7.7770    3.2020 C.ar      1 TJ2    0.0000
+      5 NAT        10.9230    6.4530    5.2880 N.ar      1 TJ2    0.0000
+      6 CAX        11.8540    7.8510    1.9780 C.ar      1 TJ2    0.0000
+      7 CAZ        11.5030    5.3850    5.7840 C.ar      1 TJ2    0.0000
+      8 CBA        12.4570    4.9100    4.9000 C.ar      1 TJ2    0.0000
+      9 CBB        11.4540    6.7390    4.1040 C.ar      1 TJ2    0.0000
+     10 CBC        12.4340    5.7800    3.7990 C.ar      1 TJ2    0.0000
+@<TRIPOS>BOND
+     1    1    6 1
+     2    2    6 ar
+     3    2    3 ar
+     4    3   10 ar
+     5    4    6 ar
+     6    4    9 ar
+     7    5    9 ar
+     8    5    7 ar
+     9    7    8 ar
+    10    8   10 ar
+    11    9   10 ar
+@<TRIPOS>SUBSTRUCTURE
+     1 TJ2     1 RESIDUE           4 F     TJ2     0 ROOT

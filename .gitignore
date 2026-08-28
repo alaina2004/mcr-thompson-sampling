@@ -17,7 +17,6 @@ results/
 aligned_ligands/
 best_conformers/
 generated_ligands/
-protein/prepared_protein.pdb
 protein/prepared_protein_fixed.pdb
 protein/prepared_protein.pdbqt
 

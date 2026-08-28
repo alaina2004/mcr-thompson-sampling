@@ -71,12 +71,6 @@ def evaluate_arm(
         print(f"[evaluate_arm] {arm} skipped: not drug-like")
         return failure_score, product_smiles, None
 
-    # 2b. Cheap drug-likeness screen before expensive alignment/GA work
-    from MolecularConformerOptimizer import check_lipinski_veber
-    if not check_lipinski_veber(full_ligand):
-        print(f"[evaluate_arm] {arm} skipped: not drug-like")
-        return failure_score, product_smiles, None
-
     # 3. MCS between core and ligand
     try:
         mcs_mol = find_mcs_between_core_and_ligand(core, full_ligand)
@@ -142,9 +136,6 @@ def evaluate_arm(
             size=size,
             **ga_kwargs
         )
-        if best_mol is None or best_score is None:
-            print(f"[evaluate_arm] genetic_docking returned no pose for {arm}")
-            return failure_score, product_smiles, None
         if best_mol is None or best_score is None:
             print(f"[evaluate_arm] genetic_docking returned no pose for {arm}")
             return failure_score, product_smiles, None
